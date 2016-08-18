@@ -1,0 +1,21 @@
+{
+  // 必须的字段
+  "name": "CSDNBigPicture",
+  "version": "1.0.0.0",
+  "manifest_version": 2,
+  // 建议提供的字段
+  "icons": 
+  { 
+    "16": "CSDN.png",             
+    "48": "CSDN.png",            
+    "128": "CSDN.png" 
+  },
+  "description": "Make the pictures 100% width , which is in the content of CSDN Blog",
+  "content_scripts": [
+    {
+      "matches": ["http://blog.csdn.net/*"],
+      "css": ["marxico.css"],
+      "js": ["jquery-3.1.0.min.js", "myscript.js"]
+    }
+  ]
+}
